@@ -1,0 +1,55 @@
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 42px;
+  border: 1px solid transparent;
+  border-radius: 9px;
+  padding: 10px 16px;
+  font-weight: 700;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.button-primary {
+  color: #fff;
+  background: var(--primary);
+}
+
+.button-primary:hover {
+  background: var(--primary-dark);
+}
+
+.button-outline {
+  width: 100%;
+  color: var(--primary);
+  border-color: var(--primary);
+  background: transparent;
+}
+
+.button-outline:hover {
+  color: #fff;
+  background: var(--primary);
+}
+
+.badge {
+  display: inline-flex;
+  padding: 5px 8px;
+  color: var(--success-text);
+  font-size: 0.72rem;
+  font-weight: 800;
+  background: var(--success-bg);
+  border-radius: 999px;
+}
+
+.badge-neutral {
+  color: #1e40af;
+  background: #dbeafe;
+}
+
+.filter-toggle {
+  display: none;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 9px 14px;
+  background: var(--surface);
+}

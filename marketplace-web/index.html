@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>MarketHub | Encontre o que precisa</title>
+  <meta
+    name="description"
+    content="Marketplace para descobrir produtos, lojas e boas ofertas."
+  >
+
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="./css/components.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header-content">
+      <a class="logo" href="./index.html" aria-label="Página inicial MarketHub">
+        <span class="logo-mark">M</span>
+        <span>MarketHub</span>
+      </a>
+
+      <form class="search-form" id="search-form">
+        <label class="sr-only" for="search">Buscar produtos</label>
+        <input
+          id="search"
+          name="search"
+          type="search"
+          placeholder="O que você está procurando?"
+        >
+        <button type="submit">Buscar</button>
+      </form>
+
+      <nav class="header-actions" aria-label="Navegação principal">
+        <a href="./login.html">Entrar</a>
+        <a class="cart-button" href="./carrinho.html">
+          Carrinho
+          <span id="cart-count" class="cart-count">0</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <div>
+          <p class="eyebrow">Compre de forma simples</p>
+          <h1>Encontre produtos incríveis perto de você.</h1>
+          <p class="hero-text">
+            Explore lojas, compare opções e compre com segurança.
+          </p>
+          <a class="button button-primary" href="#produtos">
+            Ver produtos
+          </a>
+        </div>
+
+        <div class="hero-card">
+          <span>Ofertas da semana</span>
+          <strong>Até 30% de desconto</strong>
+          <p>Em produtos selecionados.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container catalog-section" id="produtos">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Catálogo</p>
+          <h2>Produtos em destaque</h2>
+        </div>
+
+        <button class="filter-toggle" type="button">
+          Filtros
+        </button>
+      </div>
+
+      <div class="catalog-layout">
+        <aside class="filters" aria-label="Filtros de produtos">
+          <div class="filter-group">
+            <h3>Categorias</h3>
+
+            <label><input type="checkbox"> Eletrônicos</label>
+            <label><input type="checkbox"> Moda</label>
+            <label><input type="checkbox"> Casa e decoração</label>
+            <label><input type="checkbox"> Esportes</label>
+          </div>
+
+          <div class="filter-group">
+            <h3>Faixa de preço</h3>
+
+            <label for="min-price">Mínimo</label>
+            <input id="min-price" type="number" placeholder="R$ 0">
+
+            <label for="max-price">Máximo</label>
+            <input id="max-price" type="number" placeholder="R$ 5.000">
+          </div>
+
+          <button class="button button-outline" type="button">
+            Limpar filtros
+          </button>
+        </aside>
+
+        <div class="products-area">
+          <div class="products-toolbar">
+            <p><strong>12 produtos</strong> encontrados</p>
+
+            <label for="sort">
+              Ordenar:
+              <select id="sort">
+                <option>Mais relevantes</option>
+                <option>Menor preço</option>
+                <option>Maior preço</option>
+                <option>Mais recentes</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="products-grid" id="products-list">
+            <article class="product-card">
+              <a href="./produto.html" class="product-image">
+                <img
+                  src="./assets/images/placeholder-product.jpg"
+                  alt="Fone de ouvido sem fio preto"
+                >
+              </a>
+
+              <div class="product-info">
+                <span class="badge">Frete grátis</span>
+                <h3><a href="./produto.html">Fone de ouvido sem fio</a></h3>
+                <p class="product-price">R$ 199,90</p>
+                <p class="product-store">Loja Tech Brasil</p>
+
+                <button class="button button-primary add-cart" type="button">
+                  Adicionar ao carrinho
+                </button>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <a href="./produto.html" class="product-image">
+                <img
+                  src="./assets/images/placeholder-product.jpg"
+                  alt="Tênis esportivo branco"
+                >
+              </a>
+
+              <div class="product-info">
+                <span class="badge badge-neutral">Novo</span>
+                <h3><a href="./produto.html">Tênis esportivo urbano</a></h3>
+                <p class="product-price">R$ 249,90</p>
+                <p class="product-store">Sport Store</p>
+
+                <button class="button button-primary add-cart" type="button">
+                  Adicionar ao carrinho
+                </button>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <a href="./produto.html" class="product-image">
+                <img
+                  src="./assets/images/placeholder-product.jpg"
+                  alt="Luminária de mesa minimalista"
+                >
+              </a>
+
+              <div class="product-info">
+                <span class="badge">Oferta</span>
+                <h3><a href="./produto.html">Luminária minimalista</a></h3>
+                <p class="product-price">R$ 89,90</p>
+                <p class="product-store">Casa & Estilo</p>
+
+                <button class="button button-primary add-cart" type="button">
+                  Adicionar ao carrinho
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <a class="logo" href="./index.html">MarketHub</a>
+      <p>© 2026 MarketHub. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="./js/api.js"></script>
+  <script src="./js/products.js"></script>
+  <script src="./js/cart.js"></script>
+  
+</body>
+</html>
